@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{ font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'Friz_LOL';
+    src: url('Friz\ Quadrata\ TT\ Regular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'sofia_LOL';
+    src: url('Sofia_Pro_SemiBol.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Alexon_LOL';
+    src: url('Alexon_LOL') format('truetype');
+}
+
+h1 img {
+    width: 30%;
+  }
+header{
+    
+    background-color: rgba(0, 0, 0, 0.493);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 35px;
+    box-shadow: 0 0px 25px rgba(1 1 1 /  40%);
+
+}
+body{
+    background:url(white-trianglify-b79c7e1f.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.logo{
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.2s ease;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    bottom: -2px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease-in-out, left 0.2s ease-out, right 0.2s ease-out;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    
+    color: rgb(255, 0, 0);
+    left: 10%;
+    right: 10%;
+}
+
+.navigation a:not(:hover)::after {
+    left: 50%;
+    right: 50%;
+}
+section{
+    padding: 50px 100px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    background: url(Not_Bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2 {
+    font-family: 'Friz_LOL', sans-serif;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 300;
+}
+.main h2 span {
+    display: inline-block;
+    font-family: 'Friz_LOL', sans-serif;
+    /* Create a linear gradient background */
+background: linear-gradient(to left, #e49f39, #caa164);
+
+/* Set the background-clip property to text */
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+
+/* Set the text-fill-color property to transparent */
+-webkit-text-fill-color: transparent;
+-moz-text-fill-color: transparent;
+    font-size: 3em;
+    font-weight: 600;
+}
+.main h3 {
+    color: aliceblue;
+    font-family: 'Friz_LOL', sans-serif;
+    font-size: 2em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.main-btn {
+    color: aliceblue;
+    background-color: rgb(43, 117, 255);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+.main-btn:hover {
+    background-color: rgb(0, 84, 87);
+    transform: scale(1.1);
+}
+.social-icons a{
+    color: rgb(255, 255, 255);
+    font-size: 1.8em;
+    padding-right: 20px;
+}
+.title {
+    font-family: 'Friz_LOL', sans-serif;
+    display: flex;
+    justify-content: center;
+    /* Create a linear gradient background */
+    background: linear-gradient(to left, #ffca7b, #a36b0f);
+    
+    /* Set the background-clip property to text */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    
+    /* Set the text-fill-color property to transparent */
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 30px;
+
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: flex wrap;
+}
+
+.card{
+   background: url(RedirectBG.jpg);
+   width: 21.25em;
+   border-radius: 10px;
+   box-shadow: 0 0px 25px rgba(1 1 1 /  40%);
+   margin: 15px;
+   padding: 25px;
+   border-radius: 10 px;
+   transition: 0.4s ease;
+
+}
+
+.card:hover {
+   transform: scale(1.1);
+
+}
+.icon{
+    color: #F1F1F1;
+    font-size: 8em;
+    text-align: center;
+}
+.info {
+    text-align: center;
+}
+.info h3{
+    color: #F1F1F1;
+    font-family:'Friz_LOL', sans-serif;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 10px;
+}
+.info p{
+    color: #F6F7D3;
+}
+.copy{
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    padding: 15px 100px;
+}
+.copy1{
+    color: #333C4A;
+    text-align: center;
+    padding: 15px 100px;
+}
+.projects{
+    background: url(BG1-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.projects .content{
+    margin-top: 30 px ;
+}
+.Champs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(Akali_BG.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+  }
+  
+  #floating-image {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-out;
+  }
+  
+  #floating-image:hover {
+    transform: scale(1.2);
+  }
+
+.project-card{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px ;
+    transition: 0.7s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-card:hover .project-image{
+    opacity: 0.9;}
+.project-image img {
+    width: 100%;
+}
+.project-info {
+    padding: 1em;
+}
+.project-category{
+    font-size: 1.2em;
+    color: #000;
+}
+.project-title { 
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10 px;
+}
+.more-details {
+    text-decoration: none;
+    color: blue;
+}
+.more-details:hover{
+    color: blueviolet;
+    
+}
+.khaled{
+    text-decoration: none;
+}
+.contact .icon{
+    font-size: 3.5em;
+}
+.contact .info h3 {
+    color: #ffffff;
+}
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a {
+        padding-left: 10px;
+    }
+    .title {
+        font-size: 1.8em;
+    }
+    .section{
+        padding: 80px 20px;
+    }
+    .main-content h2 {
+        font-size: 1em ;
+    }
+    .main-content h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:641px){
+   body{
+    font-size: 12px;
+   }
+   .main-content h2 {
+    font-size: 0.8em;
+   }
+   .main-content h3 {
+    font-size: 1.4em;
+   }
+}
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
